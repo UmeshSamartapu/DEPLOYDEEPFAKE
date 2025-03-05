@@ -1,0 +1,23 @@
+databases:
+  - name: deepfake_db
+    databaseName: deepfake
+    user: deepfake_user
+    plan: free
+
+services:
+  - type: web
+    name: deepfake-web
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "./start.sh"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: deepfake_db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.10.10"

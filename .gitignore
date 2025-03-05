@@ -8,3 +8,20 @@ __pycache__/
 *.pt
 .DS_Store
 .env" > .gitignore
+
+# Create .gitignore
+echo "__pycache__/
+*.py[cod]
+*.sqlite3
+media/
+venv/
+.env
+*.log
+*.pot
+*.pyc
+**/__pycache__
+.DS_Store
+.pytest_cache/
+*.mp4
+*.avi
+*.mov" > .gitignore
