@@ -65,7 +65,7 @@
             <div class="progress" style="height: 25px; border-radius: 12px;">
                 <div class="progress-bar bg-{% if result.is_fake %}danger{% else %}success{% endif %}" 
                      role="progressbar" 
-                     style="width: {{ result.accuracy }}%"
+                     style="width: { { result.accuracy } } %"
                      aria-valuenow="{{ result.accuracy }}" 
                      aria-valuemin="0" 
                      aria-valuemax="100">

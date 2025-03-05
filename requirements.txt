@@ -1,10 +1,12 @@
+
+# requirements.txt
 Django
 gunicorn
 whitenoise
+dj-database-url
 torch
 torchvision
 face-recognition
 opencv-python-headless
-django-cors-headers
 python-dotenv
 psycopg2-binary

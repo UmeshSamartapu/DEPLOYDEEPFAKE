@@ -8,6 +8,7 @@ __pycache__/
 *.pt
 .DS_Store
 .env" > .gitignore
+.env
 
 # Create .gitignore
 echo "__pycache__/
